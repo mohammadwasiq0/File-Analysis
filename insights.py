@@ -3,7 +3,7 @@ import requests
 from  dotenv import load_dotenv
 load_dotenv()
 
-EURI_API_KEY= os.getenv("EURI_API_KEY=")
+EURI_API_KEY= os.getenv("EURI_API_KEY")
 
 def get_llm_insights(prompt):
     url = "https://api.euron.one/api/v1/euri/alpha/chat/completions"
